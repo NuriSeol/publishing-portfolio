@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>seol noori's portfolio</title>
+  <!-- js -->
+  <script defer src="js/jquery-3.3.1.min.js"></script>
+  <script defer src="js/slick.min.js"></script>
+  <script defer src="js/plugin/scrolla.jquery.min.js"></script>
+  <script defer src="js/plugin/splitting.min.js"></script>
+  <script defer src="js/common.js"></script>
+  <script defer src="js/process.js"></script>
+  <!-- js gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/process.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/slick.css">
+
+  <!--font arapey, notosans-->
+  <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="loader aa"></div>
+  <div class="loader bb"></div>
+
+  <div class="wrap">
+    <header>
+      <a href="index.html" class="logo en"><span>NUINUR</span></a>
+      <nav class="gnb en">
+        <ul>
+          <li><a href="about.html">
+            <span class="origin">about</span>
+            <span class="top">about</span>
+            <span class="bottom">about</span>
+          </a></li>
+          <li><a href="work.html">
+            <span class="origin">work</span>
+            <span class="top">work</span>
+            <span class="bottom">work</span>
+          </a></li>
+          <li><a href="process.html">
+            <span class="origin">portfolio</span>
+            <span class="top">portfolio</span>
+            <span class="bottom">portfolio</span>
+          </a></li>
+        </ul>
+      <a href="#" class="menuOpen"></a>
+      </nav>
+    </header>
+
+    <!-- visual -->
+    <section class="visual animate" data-animate="motion">
+      <div class="inner">
+        <div class="txt">
+          <p class="en">Portfoio</p>
+          <div><span class="scrollDown"><img src="img/scrolldown.png" alt=""></span><p class="en">P<span class="en2">r</span>ocess</p></div>
+        </div>
+      </div>
+      <div class="video">
+        <video autoplay muted loop playinline>
+          <source src="process_img/video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+  
+
+    <!-- process -------------------------------------->
+    <!--part1-->
+    <div class="part1">
+      <div class="inner_p">
+
+        <section class="brain animate" data-animate="motion">
+          <div class="proTxt">
+            <div class="en">
+              <p>BRAIN</p>
+              <p>STORMING</p>
+            </div>
+            <p>
+              <b>insight도출, keyword도출을 위한 Brainsorming</b><br>
+              '취업을 위한 포트폴리오 제작'으로 정하여 생각나는 대로 적어 나갔습니다. 
+              포토폴리오 사용자는 채용자와 면접관으로 지정했습니다. 사용자의 입장에서 
+              나의 무엇을 가장 궁금해 할까를 생각하여 자유롭게 연상되는 대로 연결고리를 지으며 1차적으로 작성했습니다.
+              작성 후 핵심 keyword를 칼라 펜으로 표시했습니다.
+            </p>
+          </div>
+          <p class="img"><img src="process_img/brain.jpg" alt=""></p>
+        </section>
+
+        <section class="diagram animate" data-animate="motion">
+          <p class="img"><img src="process_img/affinity.jpg" alt=""></p>
+          <div class="proTxt">
+            <div class="en">
+              <p>AFFINITY</p>
+              <p>DIAGRAM</p>
+            </div>
+            <p>
+              <b>정보구조도 작성 </b><br>
+              앞서 작성한 마인드맵을 토대로 정보구조도를 설계합니다. 서비스 기능들을 묶고 화면의 상하구조를 파악하고 골격을 정리했습니다. 좋은 사용자 경험을 전달할 수 있도록 정보구조를 잘 짜려고 노력했습니다. 
+            </p>
+          </div>
+        </section>
+
+        <section class="map animate" data-animate="motion">
+          <div class="proTxt">
+            <h2 class="en">MIND MAP</h2>
+            <p>
+              <b>마인드맵 작성하기</b><br>
+              앞서 작성한것들을 토대로 정보구조와 컨셉의 바탕이 되는 마인드 맵을 작성하였습니다. 작성한 마인드맵을 소개하고 개선을 위한 아이디어를 공유하였습니다.
+            </p>
+          </div>
+          <p class="img"><img src="process_img/map.jpg" alt=""></p>
+        </section>
+
+      </div><!--inner_p-->
+    </div><!--part1-->
+
+    <!-- part2 -->
+    <div class="part2">
+      <section class="concept animate" data-animate="motion">
+        <div class="inner_p">
+          <div class="proTxt">
+            <div class="en">
+              <p>KEYWORD &</p>
+              <p>CONCEPT</p>
+            </div>
+            <p><b>나의 포트폴리오에 합당한 키워드와 컨셉을 도출합니다.</b><br>
+              전체적으로 깔끔한 느낌을 내기 위해 무채색 컬러를 사용했으며 불필요한 요소들은 덜어내고 여백을 두었습니다. 또한 라인 일러스트를 사용하여 밋밋해 보이지 않고 부드러운 느낌을 주기 위해 노력했습니다.
+            </p>
+          </div>
+          <ul class="diagram circle">
+            <li><span class="en">NUINUR</span>나의 포트폴리오</li>
+            <li>겹쳐진</li>
+            <li>라인</li>
+            <li>black & green</li>
+          </ul>
+        </div><!--inner_p-->
+      </section>
+
+      <section class="research animate" data-animate="motion">
+        <div class="inner_p">
+          <div class="proTxt">
+            <div class="en">
+              <p>REFERENCE</p>
+              <p>RESEARCH</p>
+            </div>
+            <p><b>벤치마킹(Benchmarking)을 위한 Reference자료 모으기</b><br>
+              앞서 설계한 정보구조도를 적용할 수 있는 사이트를 주로 찾았습니다. 우선 정적인 상태에서의 레이아웃을 참고하였고 인터렉션은 그 후에 참고하도록 했습니다.
+            </p>
+          </div>
+        </div><!--inner_p-->
+        <ul class="searchBtn">
+          <li><a href="http://www.coleomarketing.com/">COLEO MARKETING GROUP</a></li>
+          <li><a href="https://www.noow.co/"></a></li>
+          <li><a href="https://www.stan.vision/"></a></li>
+        </ul>
+      </section>
+
+      <section class="sketch animate" data-animate="motion">
+        <div class="proTxt">
+          <h2 class="en">IDEA SKETCH</h2>
+          <p>레퍼런스 이미지 서치과정을 통해 컨셉과 가장 잘 어울리는 이미지들을
+            조합하여 <br>전체적인 틀을 아이디어 스케치 합니다.
+          </p>
+        </div>
+          <ul class="sketch_swiper">
+            <li><p class="img"><img src="process_img/main.jpg" alt=""></p></li>
+            <li><p class="img"><img src="process_img/main.jpg" alt=""></p></li>
+            <li><p class="img"><img src="process_img/about.jpg" alt=""></p></li>
+            <li><p class="img"><img src="process_img/about.jpg" alt=""></p></li>
+            <li><p class="img"><img src="process_img/work.jpg" alt=""></p></li>
+            <li><p class="img"><img src="process_img/work.jpg" alt=""></p></li>
+            <li><p class="img"><img src="process_img/process.jpg" alt=""></p></li>
+            <li><p class="img"><img src="process_img/process.jpg" alt=""></p></li>
+            <li><p class="img"><img src="process_img/worksub.jpg" alt=""></p></li>
+            <li><p class="img"><img src="process_img/worksub.jpg" alt=""></p></li>
+          </ul>
+      </section>
+
+      <section class="typo animate" data-animate="motion">
+        <div class="inner_p">
+          <ul class="diagram square">
+            <li><span class="en">NUINUR</span>나의 포트폴리오</li>
+            <li class="en">
+              Gilroy
+              <p class="font">
+                ABCDEFGHIJKLMNOPQRS<br>
+                abcdefghijklmnopqrstuvwxyz
+              </p>
+            </li>
+            <li class="en2">
+              Mazius
+              <p class="font">
+                ABCDEFGHIJKLMNOPQRS<br>
+                abcdefghijklmnopqrstuvwx
+              </p>
+            </li>
+            <li>
+              Noto Sans KR
+              <p class="font">가나다라마바사아자차카<br>
+                ABCDEFGHIJKLMNOPQRST<br>
+                abcdefghijklmnopqrstuvw
+              </p>
+            </li>
+          </ul>
+          <div class="proTxt">
+            <h2 class="en">TYPOGRAPHY</h2>
+            <p><b>나의 포트폴리오에 합당한 키워드와 컨셉을 도출합니다.</b><br>
+              전체적으로 깔끔한 느낌을 내기 위해 무채색 컬러를 사용했으며 불필요한 요소들은 덜어내고 여백을 두었습니다. 또한 라인 일러스트를 사용하여 밋밋해 보이지 않고 부드러운 느낌을 주기 위해 노력했습니다.
+            </p>
+          </div>
+        </div><!--inner_p-->
+      </section>
+    </div><!-- part2 -->
+
+    <!-- part3 -->
+    <div class="part3">
+      <section class="architecture animate" data-animate="motion">
+        <div class="inner_p">
+          <h2 class="en">INFORMATION ARCHITECTURE</h2>
+          <div class="box">
+            <div class="boxTop">
+              <p>정보구조도 작성</p>
+              <p>앞서 작성한 마인드맵을 토대로 정보구조도를 설계합니다. 서비스 기능들을 묶고 화면의 상하구조를 파악하고 골격을 정리했습니다. 좋은 사용자 경험을 전달할 수 있도록 정보구조를 잘 짜려고 노력했습니다. </p>
+            </div>
+            <p class="img"><img src="process_img/archi.png" alt=""></p>
+          </div>
+        </div><!--inner_p-->
+      </section>
+
+      <section class="wire animate" data-animate="motion">
+        <div class="inner_p">
+          <div class="wireTop">
+            <h2 class="en">WIRE FRAME</h2>
+            <p>XD 프로그램을 사용하여 최종 시안을 만들었습니다.</p>
+          </div>
+          <ul>
+            <li><img src="process_img/index.png" alt=""></li>
+            <li><img src="process_img/about.png" alt=""></li>
+            <li><img src="process_img/work.png" alt=""></li>
+            <li><img src="process_img/gallerySub.png" alt=""></li>
+            <li class="pro">
+              <p><img src="process_img/process1.png" alt=""></p>  
+              <p><img src="process_img/process2.png" alt=""></p>  
+            </li>
+          </ul>
+        </div><!--inner_p-->
+      </section>
+    </div><!--part3-->
+
+
+    <div class="part4">
+      <div class="inner_p">
+
+        <!-- index -->
+        <section class="index animate" data-animate="motion">
+          <p class="img">
+            <img src="process_img/main.gif" alt="">
+          </p>
+          <div class="cont">
+            <h2 class="en" data-splitting>INDEX </h2>
+            <p class="txt">visual의 z축 스크롤 애니메이션이 특징적이며, slick.slide와 swiper-parallax를 활용하였습니다. 마우스의 움직임에 따라 요소가 부드럽게 움직이며, 이미지와 버튼에 hover 효과를 적용 하였습니다.</p>
+          </div>
+        </section>
+
+        <!-- about -->
+        <section class="about animate" data-animate="motion">
+          <div class="cont">
+            <h2 class="en" data-splitting>ABOUT</h2>
+            <p class="txt">visual의 z축 스크롤 애니메이션이 특징적이며, slick.slide와 swiper-parallax를 활용하였습니다. 마우스의 움직임에 따라 요소가 부드럽게 움직이며, 이미지와 버튼에 hover 효과를 적용 하였습니다.</p>
+          </div>
+          <p class="img">
+            <img src="process_img/about.gif" alt="">
+          </p>
+        </section>
+
+        <!--gallery-->
+        <section class="gallery animate" data-animate="motion">
+          <h2 class="en" data-splitting>WORK</h2>
+          <div class="gTop">
+            <p class="img">
+              <img src="process_img/work.gif" alt="">
+            </p>
+          </div>
+          <div class="gBottom">
+            <p class="txt">visual의 z축 스크롤 애니메이션이 특징적이며, slick.slide와 swiper-parallax를 활용하였습니다. 마우스의 움직임에 따라 요소가 부드럽게 움직이며, 이미지와 버튼에 hover 효과를 적용 하였습니다.</p>
+            <div class="sub">
+              <p class="img">
+                <img src="process_img/sub.gif" alt="">
+              </p>
+              <p class="en">SUB PAGE</p>
+            </div>
+          </div>
+        </section>
+        
+      </div><!--inner_p-->
+    </div><!--part4-->
+
+    <footer class="animate" data-animate="motion">
+      <div class="inner">
+        <p>THANK YOU FOR REVEIWING MY PORFOLIO. <br>
+          IF YOU ARE INTERESTED IN ME, CONTACT ME.</p>
+        <div class="mainText en">
+          <p>Togethe<span class="en2">r</span></p>
+          <p><span>we create projects</span></p>
+        </div>
+        <div class="footer_bottom">
+          <ul class="info1">
+            <li>설누리 SEOL NURI</li>
+            <li>Web Publisher</li>
+            <li>Seoul, Republic of Korea</li>
+          </ul>
+          <ul class="info2">
+            <li><span>PHONE</span>+82 010-4584-8370</li>
+            <li><a href="#"><span>E-MAIL</span>qqq4020@naver.com</a></li>
+            <li><a href="https://nuinur.tistory.com/"><span>TISTORY</span></a>https://nuinur.tistory.com/</li>
+          </ul>
+          <p>2023 SEOL NURI'S PUBLISHING PORTFOLIO</p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="process.html" class="goTop"><img src="img/readMore3.png" alt=""></a>
+  </div><!--wrap-->
+</body>
+</html>
