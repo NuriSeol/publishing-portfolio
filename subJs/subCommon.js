@@ -1,0 +1,2 @@
+// splitting 
+$(function(){Splitting();}) 

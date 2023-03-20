@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/* .visual */
+section.visual {margin: 90px 30px; height: 68vh;}
+section.visual .visual_in {height: 100%; width: 100%; display: flex; justify-content: space-between; padding: 0 3%; box-sizing: border-box;}
+section.visual h1 {font-size: 10rem; line-height: 1; padding-top: 27%;}
+section.visual h1 span {font-size: 10.2rem; font-weight: normal;}
+section.visual .right {text-align: right; padding-top: 24%;}
+section.visual .right p.date {font-size: 50px; font-style: normal; line-height: 1; margin-bottom: 25px;}
+section.visual .right p:nth-child(2) {font-size: 14px; letter-spacing: -1px; margin-bottom: 20px;}
+section.visual .right span {display: inline-block; width: 160px; height: 28px; text-align: center; line-height: 28px; font-size: 16px; border: 1px solid #fff; border-radius: 20px; box-sizing: border-box;}
+
+.visual.motion h1 {animation: textAni 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
+.visual.motion div.right {animation-name: opacity; animation-duration: 1s;}
+@keyframes opacity {
+  0% {opacity: 0;}
+  30% {opacity: 0;}
+}
+
+.inner_sub {width: 65%; margin: 32vh auto;}
+
+/* info */
+section.info {margin-bottom: 20vh; font-weight: 100;}
+section.info .inner_sub {display: flex; justify-content: space-between;}
+section.info .inner_sub ul.list {width: 25%; line-height: 1.7;}
+section.info .inner_sub ul.list.a, section.info .inner_sub ul.list.b {padding-right: 6%; border-right: 1px solid rgba(255, 255, 255, 0.3);}
+
+section.info .inner_sub ul.list > li {margin-bottom: 60px;}
+section.info .inner_sub ul.list > li:last-child {margin-bottom: 0;}
+section.info .inner_sub ul.list li p.tit {font-size: 22px; margin-bottom: 20px; font-size: bold;}
+section.info .inner_sub ul.list li p.tit.en {font-size: 25px;}
+
+section.info.motion ul.list {animation-name: slide-up; animation-duration: 0.5s;}
+section.info.motion ul.list:nth-child(2) {animation-duration: 0.7s;}
+section.info.motion ul.list:nth-child(3) {animation-duration: 0.9s;}
+@keyframes slide-up {
+  0% {transform: translateY(30px); opacity: 0;}
+  80% {transform: translateY(30px); opacity: 0;}
+}
+
+
+/* .mode */
+.mode .inner_sub {width: 60%; margin: 0 auto;}
+p.img {border-radius: 20px; border: 5px solid #222; box-sizing: border-box; margin-bottom: 40px; overflow: hidden;}
+h2.en {font-weight: bold; letter-spacing: 2px;}
+.txt {color: #ccc;}
+
+/* 공통 스플리팅 */
+.pc.motion .splitting .char {display: inline-block; animation: spli 0.8s cubic-bezier(.5, 0, .5, 1) both; animation-delay: calc(0.06s * var(--char-index));}
+.mobTab.motion .splitting .char {display: inline-block; animation: spli 0.8s cubic-bezier(.5, 0, .5, 1) both; animation-delay: calc(0.06s * var(--char-index));}
+.tab.motion .splitting .char {display: inline-block; animation: spli 0.8s cubic-bezier(.5, 0, .5, 1) both; animation-delay: calc(0.06s * var(--char-index));}
+.full.motion .splitting .char {display: inline-block; animation: spli 0.5s cubic-bezier(.5, 0, .5, 1) both; animation-delay: calc(0.06s * var(--char-index));}
+@keyframes spli {
+  0% {transform: translateY(30px); opacity: 0;}
+  80% {transform: translateY(30px); opacity: 0;}
+}
+
+/* 공통 애니 */
+.pc.motion {animation-name: slide-up; animation-duration: 0.5s;}
+.mobTab.motion {animation-name: slide-up; animation-duration: 0.5s;}
+.tab.motion {animation-name: slide-up; animation-duration: 0.5s;}
+.full.motion {animation-name: slide-up; animation-duration: 0.5s;}
+
+
+/* 동영상 */
+p.img video {width: 100%;}
+p.img img {width: 100%;}
+
+/* .pc */
+.pc {margin-bottom: 15vh;}
+.pc .top {width: 100%; display: flex; justify-content: space-between;}
+.pc h2.en {writing-mode: vertical-rl; font-size: 40px;}
+.pc .top p.img {width: 1000px; height: 480px;}
+
+
+/* .mobTab */
+.mobTab {display: flex; justify-content: space-between;}
+.mobTab .mob {width: 24%;}
+.mobTab .mob h2.en {font-size: 30px; margin-bottom: 10px;}
+.mobTab .mob p.img {width: 280px; height: 470px;}
+
+.mobTab .tab {padding-top: 35vh; display: flex; justify-content: space-between;}
+.mobTab .tab p.img {width: 650px; height: 360px;}
+.mobTab .tab h2.en {writing-mode: vertical-rl; font-size: 40px; margin-right: 40px;}
+
+
+/* .full */
+.full {margin: 50vh 15vw;}
+.full h2.en {font-size: 30px; text-align: right; margin-bottom: 40px;}
+.full img {width: 100%; height: auto;}
