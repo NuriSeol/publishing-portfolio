@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+
+/* .visual */
+.visual {width: 100%; height: 100vh; position: relative; overflow: hidden; padding-bottom: 25vh;}
+.visual .inner {position: absolute; z-index: 1; left: 10%;}
+.visual .inner p {font-size: 15rem; line-height: 100vh;}
+.visual .inner p span.en2 {font-size: 15.2rem; color: var(--point);}
+
+.visual .scrollBox {float: right; width: 40%; display: flex; margin-right: 10%;}
+.visual .scroll {width: 50%; height: 100vh; overflow: hidden; margin-left: 50px;}
+.visual ul.rolling {position: relative; height: auto; height: 6800px; display: flex; justify-content: space-around; flex-direction: column-reverse;}
+.visual ul.rolling li {width: 100%; height: 400px; position: relative;}
+.visual ul.rolling li img {height: 100%; width: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);} 
+
+@keyframes scroll {
+  0% {transform: translateY(0%);}
+  100% {transform: translateY(-50%);}
+}
+.rolling {animation: scroll 18s infinite linear;}
+.rolling.b {animation: scroll 20s infinite linear; }
+
+
+
+/* contents------------- */
+section {width: 100%;}
+section .top {text-align: center;}
+section .top h2 {font-size: 10rem; line-height: 1;}
+section .top h2 span {font-size: 10.2rem; font-weight: normal;}
+section .top .titDate {font-size: 4rem; margin: 30px 0 70px;}
+section .top .titSub {width: 60%; color: var(--body-color); margin: 0 auto 15vh; letter-spacing: -1px;}
+
+
+/* clone */
+section.clone {margin-bottom: 25vh;}
+
+section.clone ul.a {overflow: hidden; width: 100%; display: flex; justify-content: space-between; align-items: flex-end; margin: 0 auto; margin-bottom: 7vh;}
+section.clone ul.a>li:first-child {width: 58%;}
+section.clone ul.a>li:nth-child(2) {width: 38%;}
+div.b {width: 50%; margin: 0 auto; margin-bottom: 7vh;}
+div.b a {display: block; width: 100%; height: 100%;}
+div.c {width: 100%; display: flex; justify-content: space-between; align-items:center; margin-bottom: 7vh;}
+div.c .left {width: 38%;}
+div.c .right {width: 58%;}
+div.c .right>li:last-child {width: 80%; margin-top: 7vh;}
+div.d {width: 58%; margin-bottom: 7vh;}
+div.d a {display: block; width: 100%; height: 100%;}
+section.clone ul.e {overflow: hidden; width: 100%; display: flex; justify-content: space-between; align-items: flex-end; margin: 0 auto; margin-bottom: 7vh;}
+section.clone ul.e>li:first-child {width: 38%;}
+section.clone ul.e>li:nth-child(2) {width: 58%; padding-bottom: 30vh;}
+
+section.clone a {display: block; width: 100%; height: 100%;}
+section.clone a p.img {width: 100%; overflow: hidden; background: #fff; position: relative;}
+section.clone a p.img::after {content: ''; display: block; padding-bottom: 100%;}
+section.clone a p.img img {height: 100%; position: absolute; left: 40%; transform: translateX(-50%);}
+section.clone a ul.btn  {display: flex; margin-top: 20px; font-size: 1.4rem;}
+section.clone a ul.btn li {margin-right: 10px; display: inline-block; padding: 4px 12px; border: 1px solid #fff; border-radius: 20px; line-height: 1;}
+section.clone a ul.btn li:first-child {background: #fff; color: #000; font-family: 'MAZIUS';}
+section.clone a p.tit {margin-top: 10px; font-size: 2rem; }
+section.clone a p.tit span {color: rgb(79, 79, 79);}
+
+/* 모션 */
+@keyframes opacity {
+  0% {opacity: 0;}
+  30% {opacity: 0;}
+}
+section.clone ul li.motion {animation-name: opacity; animation-duration: 1s;}
+section.clone div.animate {animation-name: opacity; animation-duration: 1s;}
+
+/* edit */
+section.edit {width: 100%; position: relative; padding: 100px 0 0;}
+
+/* slide-swiper */
+.section_slide {width: 100%; position: relative; overflow: visible; margin-bottom: 10vh;}
+.swiper-container {overflow: visible; width: 100%;}
+.swiper-slide {width: 100%; opacity: 0.4; transition: all 0.3s; position: relative;padding: 70px 0 70px;}
+.swiper-slide .imgBox {width: 100%; position: relative; overflow: hidden; margin: 0 auto; height: 30vh;} 
+.swiper-slide .imgBox img {height: 100%; position: absolute; left: 50%; transform: translateX(-50%);}
+.swiper-slide .imgBox .squer {display: block; width: 100%; height: 100%; background: rgba(0,0,0,0.7); position: absolute; right: 0; top: 0; z-index: 5; opacity: 0; transition: all 0.5s;}
+.swiper-slide .txtBox {position: relative; width: 100%; z-index: 200;}
+.swiper-slide .txtBox h2 {font-size: 2rem; margin-bottom: 20px; text-align: center; font-weight: normal; line-height: -5px;}
+.swiper-container .swiper-wrapper .swiper-slide ul {font-size: 1.6rem; position: absolute; left: 40%; top: 10%; z-index: 10; opacity: 0; transition: all 0.5s;}
+.swiper-container .swiper-wrapper .swiper-slide ul li {position: relative; margin-bottom: 10px;}
+.swiper-container .swiper-wrapper .swiper-slide ul li:before {content: '회사명'; position: absolute; top: 0; left: -95px; width: 80px; height: 25px; color: #fff; border: 1px solid #fff; border-radius: 15px; text-align: center; line-height: 25px; font-size: 1.4rem;}  
+.swiper-container .swiper-wrapper .swiper-slide ul li:nth-child(2)::before {content: '기한';}
+.swiper-container .swiper-wrapper .swiper-slide ul li:nth-child(3)::before {content: '담당업무';}
+
+/* hover */
+.swiper-slide-active {opacity:1;}
+.swiper-slide .imgBox:hover .squer, .swiper-slide .imgBox:focus .squer {opacity: 1;}
+.swiper-slide .imgBox:hover ul, .swiper-slide .imgBox:focus ul {opacity: 1;} 
+
+/* 표 */
+section.edit table {border-collapse: collapse; width: 70%; margin: 0 auto;}
+section.edit table th {text-align: left;}
+section.edit table tr {border-bottom: 1px solid rgba(255, 255, 255, 0.3); height: 65px; box-sizing: border-box; transition: all 0.3s;}
+section.edit table tr:last-child {border: none;}
+section.edit table td {font-size: 16px;}
+section.edit table th:first-child {box-sizing: border-box;}
+section.edit table td:first-child {width: 28%; box-sizing: border-box;}
+section.edit table td:nth-child(2) {width: 20%;}
+
+/* 표 hover */
+section.edit table tr:hover {background: #fff; color: #000;}
+section.edit table tr:first-child:hover {background: #000; color: #fff;}

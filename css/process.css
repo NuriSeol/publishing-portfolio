@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+/* 공통 애니메이션 */
+@keyframes slide-up {
+  0% {transform: translateY(30px); opacity: 0;}
+  30% {transform: translateY(30px); opacity: 0;}
+}
+
+/* .visual */
+.visual {box-sizing: border-box; width: 100%; height: 100vh; position: relative;}
+.visual .inner {width: 62.5%; height: 85vh; top: 50%; left: 0; transform: translateY(-50%); z-index: 2;}
+.visual .inner .txt {position: absolute; top: 50%; width: 100%; transform: translateY(-50%);}
+.visual .inner p {font-size: 18rem; line-height: 1; position: relative; z-index: 2; width: 100%;}
+.visual .inner .txt div {text-align: right; position: relative;} 
+.visual .inner p span.en2 {font-size: 18.2rem; color: var(--point);}
+.visual .inner .scrollDown {display: block; width: 60px; height: 60px; position: absolute; top: 50%; left: 0; border: 1px solid #fff; border-radius: 50%; transform: translateY(-50%);}
+.visual .inner .scrollDown img {width: 20px; height: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.visual .video {width: 35%; overflow: hidden; height: 85vh; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.5;}
+.visual .video video {width: 100%; height: auto;}
+
+
+/* process-------------------------- */
+/* 공통 */
+.inner_p {width: 60%; margin: 0 auto;}
+
+.proTxt {width: 40%;}
+.proTxt .en {font-size: 55px; font-weight: normal; margin-bottom: 30px; line-height: 1.2;}
+.proTxt p {text-align: justify; letter-spacing: -1px;}
+.proTxt p b {display: inline-block; margin-bottom: 15px;}
+
+/* part1 ------------------*/
+div.part1 section {overflow: hidden; position: relative;} 
+div.part1 section:nth-child(2) {margin: 200px 0;}
+
+div.part1 {width: 100%; padding: 300px 0;}
+div.part1 .img {height: auto; width: 40%;}
+div.part1 .img img {width: 100%; height: auto; filter: grayscale(1);}
+
+/* brain */
+div.part1 section.brain .proTxt {float: left; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+div.part1 section.brain .img {float: right;}
+/* 애니 */
+div.part1 .brain.motion {animation-name: slide-up; animation-duration: 1.2s;}
+div.part1 .brain.motion .proTxt .en p {animation: textAni 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; animation-delay: 0.5s;}
+div.part1 .brain.motion .proTxt .en p:nth-child(2) {animation-delay: 0.6s;}
+
+
+/* diagram */
+div.part1 section.diagram .img {float: left;}
+div.part1 section.diagram .proTxt {float: right; position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+/* 애니 */
+div.part1 .diagram.motion {animation-name: slide-up; animation-duration: 1.2s;}
+div.part1 .diagram.motion .proTxt .en p {animation: textAni 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; animation-delay: 0.5s;}
+div.part1 .diagram.motion .proTxt .en p:nth-child(2) {animation-delay: 0.6s;}
+
+
+/* map */
+div.part1 section.map .proTxt {float: left; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+div.part1 section.map .img {float: right;}
+/* 애니 */
+div.part1 .map.motion {animation-name: slide-up; animation-duration: 1.2s;}
+div.part1 .map.motion .proTxt .en {animation: textAni 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; animation-delay: 0.5s;}
+
+
+
+/* part2 ----------------------*/
+div.part2 section {overflow: hidden; position: relative; padding: 300px 0; width: 100%;}  
+
+/* 다이어그램 */
+div.part2 section ul.diagram {width: 40%;}
+div.part2 section ul.diagram li {width: 180px; height: 180px; border: 1.5px solid var(--body-color); text-align: center; line-height: 180px; box-sizing: border-box; float: left; font-size: 20px;}
+div.part2 section ul.diagram li:first-child {margin: 0 15px 15px 0; background: var(--body-color); color: #000; font-weight: bold; font-weight: normal; font-size: 13px; line-height: 1; letter-spacing: -1px;}
+div.part2 section ul.diagram li span {font-size: 23px; font-weight: bold; display: block; margin-bottom: 10px; padding-top: 67px; letter-spacing: 1;}
+div.part2 section ul.diagram li:nth-child(2) {margin-bottom: 15px;}
+div.part2 section ul.diagram li:nth-child(3) {margin-right: 15px;}
+
+/* concept */
+section.concept .proTxt {float: left; padding-top: 50px;}
+section.concept ul.circle {float: right;}
+section.concept ul.circle li {border-radius: 50%;}
+/* 애니 */
+section.concept.motion {animation-name: slide-up; animation-duration: 1.2s;}
+section.concept.motion .proTxt .en p {animation: textAni 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; animation-delay: 0.3s;}
+section.concept.motion .proTxt .en p:nth-child(2) {animation-delay: 0.6s;}
+
+
+/* research */
+section.research {position: relative;}
+section.research::before {content: ''; position: absolute; top: 0; left: 0; background: url(../process_img/refer.jpg) no-repeat; width: 100%; height: 100%; opacity: 0.3;}
+section.research ul.searchBtn {position: absolute; right: 50px; bottom: 55px;}
+section.research ul.searchBtn li {float: right; margin-right: 25px; display: inline-block; height: 35px; border: 1.5px solid var(--body-color); box-sizing: border-box; border-radius: 20px; padding: 1px 30px; font-size: 18px; transition: all 0.5s; font-weight: normal;}
+section.research ul.searchBtn li a {display: block; width: 100%; height: 100%;}  
+section.research ul.searchBtn li:nth-child(2) {background: url(../process_img/noov.png) no-repeat center/70px; width: 130px;}
+section.research ul.searchBtn li:nth-child(3) {background: url(../process_img/stan.png) no-repeat center/100px; width: 160px;}
+/* hover */
+section.research ul.searchBtn li:hover, section.research ul.searchBtn li:focus {background: var(--body-color); color: #000;}
+section.research ul.searchBtn li:nth-child(2):hover, section.research ul.searchBtn li:nth-child(2):focus {background: var(--body-color) url(../process_img/noovb.png) no-repeat center/70px; }
+section.research ul.searchBtn li:nth-child(3):hover, section.research ul.searchBtn li:nth-child(2):focus {background: var(--body-color) url(../process_img/stanb.png) no-repeat center/100px; }
+/* 애니 */
+section.research.motion {animation-name: slide-up; animation-duration: 1.2s;}
+section.research.motion .proTxt .en p {animation: textAni 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; animation-delay: 0.5s;}
+section.research.motion .proTxt .en p:nth-child(2) {animation-delay: 0.6s;}
+
+
+/* sketch */
+section.sketch {margin-left: 18%;}
+section.sketch ul {width: 100%; margin-top: 130px;}
+section.sketch ul li {width: 250px; height: 400px; margin-right: 23px; position: relative;}
+section.sketch ul li img {width: 100%;}
+section.sketch ul li:nth-child(2n) img {position: absolute; bottom: 0; left: 0;}
+/* 애니 */
+section.sketch.motion {animation-name: slide-up; animation-duration: 1.2s;}
+section.sketch.motion .proTxt .en {animation: textAni 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; animation-delay: 0.5s;}
+
+
+/* typo */
+section.typo .proTxt {float: right; padding-top: 100px;}
+section.typo ul.square {float: left;}
+section.typo ul.square li {position: relative; transition: all 0.5s ease-in-out;}
+section.typo ul.square li.en2 {font-size: 23px;}
+/* 애니 */
+section.typo.motion {animation-name: slide-up; animation-duration: 1.2s;}
+section.typo.motion .proTxt .en p {animation: textAni 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; animation-delay: 0.5s;}
+section.typo.motion .proTxt .en p:nth-child(2) {animation-delay: 0.6s;}
+
+
+/* typo 호버 */
+section.typo ul.square li p.font {color: transparent; width: 100%; position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 11px; line-height: 1.4; font-weight: normal;}
+section.typo ul.square li.en2 p.font {font-size: 14px; transition: all 0.3s ease-in-out; line-height: 1;}
+
+section.typo ul.square li:hover, section.typo ul.square li:focus {background: var(--body-color);}
+section.typo ul.square li:hover p.font, section.typo ul.square li:focus p.font {color: #000;}
+/* 애니 */
+section.typo.motion {animation-name: slide-up; animation-duration: 1.2s;}
+section.typo.motion .proTxt .en {animation: textAni 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; animation-delay: 0.5s;}
+
+
+/* part3 ----------------------*/
+div.part3 {width: 100%; padding: 300px 0;}
+
+/* architecture */
+section.architecture h2 {font-size: 55px; font-weight: normal; margin-bottom: 90px;text-align: center;}
+section.architecture .box {width: 100%; box-sizing: border-box; border: 1.5px solid #bbb;  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.03);}
+section.architecture .box .boxTop {display: flex; width: 90%; margin: 60px auto 90px;}
+section.architecture .box .boxTop p {letter-spacing: -1px;}
+section.architecture .box .boxTop p:first-child {width: 30%; font-weight: 600;}
+section.architecture .box p.img {text-align: center; margin-bottom: 100px;} 
+section.architecture .box p.img img {height: auto; width: 65%;}
+/* 애니 */
+section.architecture.motion {animation-name: slide-up; animation-duration: 1.2s;}
+section.architecture.motion .proTxt .en {animation: textAni 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; animation-delay: 0.5s;}
+
+
+
+/* wire */
+section.wire {padding-top: 320px;}
+section.wire .wireTop {text-align: center; margin-bottom: 120px;}
+section.wire .wireTop h2 {font-size: 55px; margin-bottom: 15px;}
+section.wire .wireTop p {letter-spacing: -1px;}
+section.wire ul {display: flex; justify-content: space-between;}
+section.wire ul li {width: 15%;}
+section.wire ul li.pro {width: 20%; display: flex; justify-content: space-between;}
+section.wire ul li img {width: 100%; height: auto; border: 1px solid var(--body-color);}
+section.wire ul li.pro p {width: 48%;}
+/* 애니 */
+section.wire.motion {animation-name: slide-up; animation-duration: 1.2s;}
+section.wire.motion .proTxt .en {animation: textAni 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; animation-delay: 0.5s;}
+
+
+/* part3 ----------------------*/
+div.part4 section {overflow: hidden; position: relative; color: var(--body-color); padding: 320px 0; width: 100%;}  
+
+
+/* part4 ----------------------*/
+.part4 section.index, .part4 section.about {overflow: hidden; position: relative; padding: 80px 0; width: 1000px; margin: 0 auto; display: flex; justify-content: space-between;}
+.part4 .cont {width: 250px}
+.part4 p.img {width: 680px; height: 320px;}
+.part4 p.img {border-radius: 20px; border: 5px solid #222; margin-bottom: 40px; overflow: hidden;}
+.part4 p.img img {width: 100%;}
+.part4 h2.en {font-weight: bold; letter-spacing: 2px; font-size: 55px; margin-bottom: 20px;}
+.part4 .gallery {padding-top: 80px;}
+.part4 .gallery .gBottom {width: 100%; display: flex; justify-content: space-between;}
+.part4 .gallery .gBottom p.txt {width: 40%; text-align: justify;}
+.part4 .gallery .gBottom .sub {width: 50%; font-size: 30px;}
+.part4 .gallery .gBottom p.img {width: 400px; height: 200px;}
+
+/* 공통 스플리팅 */
+@keyframes spli {
+  0% {transform: translateY(30px); opacity: 0;}
+  80% {transform: translateY(30px); opacity: 0;}
+}
+
+/* 애니 */
+.part4 .index.motion {animation-name: slide-up; animation-duration: 1.2s;}
+/* text 애니메이션 */
+.part4 .index.motion .splitting .char {display: inline-block; animation: spli 1s cubic-bezier(.5, 0, .5, 1) both; animation-delay: calc(0.06s * var(--char-index));}
+
+/* about */
+.part4 .about {display: flex; justify-content: space-between;}
+/* 애니 */
+.part4 .about.motion {animation-name: slide-up; animation-duration: 1.2s;}
+/* text 애니메이션 */
+.part4 .about.motion .splitting .char {display: inline-block; animation: spli 1s cubic-bezier(.5, 0, .5, 1) both; animation-delay: calc(0.06s * var(--char-index));}
+
+
+/* .gallery */
+/* 애니 */
+.part4 .gallery.motion .gTop {animation-name: slide-up; animation-duration: 1.2s;}
+.part4 .gallery.motion .gBottom {animation-name: slide-up; animation-duration: 1.5s;}
+/* text 애니메이션 */
+.part4 .gallery.motion .splitting .char {display: inline-block; animation: spli 1s cubic-bezier(.5, 0, .5, 1) both; animation-delay: calc(0.06s * var(--char-index));}

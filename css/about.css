@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+
+/* visual */
+section.visual {width: 100%; height: 100vh; position: relative;} 
+.visual .inner {box-sizing: border-box; display: flex; justify-content: space-between; z-index: 2; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.visual .inner .tit p {font-size: 18rem; z-index: 5; line-height: 1;}
+.visual .inner .tit p span {font-size: 18.2rem; color: var(--point);}
+.visual .inner .scrollX {background: var(--point); position: absolute; right: 0; top: 50%; transform: translateY(-50%); overflow: hidden; width: 35%; color: #000; line-height: 1.2;}
+.visual .inner ul {display: flex; width: 2300px; justify-content: space-between;}
+.visual .inner ul li {font-size: 4rem; display: inline-block;}
+@keyframes scroll {
+  0% {transform: translateX(0%);}
+  100% {transform: translateX(-50%);}
+}
+.visual .inner ul {animation: scroll 15s infinite linear;}
+
+.visual p.img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 35%;  border-radius: 50%; overflow: hidden; filter: grayscale(1);}
+.visual p.img::after {content: ''; display: block; padding-bottom: 100%;}
+.visual p.img img {position: absolute; width: 100%; transform: translateY(-10%);}
+
+
+/* greeting */
+.greeting {width: 100%; padding: 380px 5vw; box-sizing: border-box;}
+.greeting .greet_txt p {font-size: 12.5rem; line-height: 1.1; letter-spacing: -2px;} 
+.greeting .greet_txt p.b a {color: var(--point);}
+.greeting p.d {text-align: center; font-size: 2rem; margin-top: 60px; letter-spacing: -1px;}
+.greeting .greet_txt p span.en2 {font-size: 12.7rem;}
+
+
+/* about */
+.about {width: 100%; padding-bottom: 300px;}
+.about .inner {width: 60%;}
+.about .inner .about_txt {font-size: 17px; letter-spacing: -1px; width: 50%; line-height: 2;}
+.about .inner .about_txt h3 {font-size: 3rem; font-weight: 400; line-height: 1.6; margin-bottom: 30px;}
+.about .inner .about_txt p {line-height: 1.7;}
+.about .inner .about_txt ul.list {margin-top: 40px; line-height: 2; font-size: 1.6rem;}
+.about .inner .about_txt ul.list li {margin-top: 20px; padding-left: 120px; position: relative;}
+.about .inner .about_txt ul.list li::before {content: '생년월일'; font-size: 1.5rem; line-height: 32px; display: inline-block; width: 100px; height: 32px; text-align: center; border-radius: 20px; border: 1px solid var(--body-color); box-sizing: border-box; margin-right: 15px; position: absolute; top: 0; left: 0;}
+.about .inner .about_txt ul.list li:nth-child(2):before {content: '학력&교육';}
+.about .inner .about_txt ul.list li:nth-child(3):before {content: '경력';}
+.about .inner .about_txt ul.list li:nth-child(4):before {content: '자격증';}
+
+.about .cards {position: absolute; right: 0; top:50%; transform: translateY(-50%);}
+.swiper {width: 340px;height: 480px; }
+.swiper-slide {display: flex; align-items: center; justify-content: center;border-radius: 18px;font-size: 14px;font-weight: bold;color: #fff; }
+.swiper-slide:nth-child(1n) {background: url(../about_img/about1.jpg) no-repeat center/cover;}
+.swiper-slide:nth-child(2n) {background: url(../about_img/about2.jpg) no-repeat center/cover;}
+.swiper-slide:nth-child(3n) {background: url(../about_img/about3.jpg) no-repeat center/cover;}
+.swiper-slide:nth-child(4n) {background: url(../img/motto1.jpg) no-repeat center/cover;}
+.swiper-slide:nth-child(5n) {background: url(../about_img/visual1.jpg) no-repeat center/cover;}
+
+
+/* about설명 모션 */
+.about.motion .about_txt {animation-name: up; animation-duration: 1.5s;}
+@keyframes up {
+  0% {opacity: 0; transform: translateY(200px);}
+  30% {opacity: 0; transform: translateY(200px);}
+}
+
+
+/* strength */
+.strength {padding: 100px 0 300px;}
+.strength .inner {width: 1200px; margin: 0 auto;}
+.strength .top {text-align: center; margin-bottom: 15vh;}
+.strength .top h2 {font-size: 10rem;}
+.strength .top h2 span {font-size: 10.2rem;  font-weight: normal;}
+.strength .top .titSub {margin: 30px auto 0; font-weight: 600;}
+
+.strength .bottom {display: flex; justify-content: space-between; align-items: flex-end; position: relative;}
+.strength .bottom .circle {width: 900px; background: #fff; color: #000; border-radius: 50%; position: relative; margin-bottom: 5vh;}
+.strength .bottom .circle::after {content: ''; display: block; padding-bottom: 100%;}
+.strength .bottom .circle ul {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50%; letter-spacing: -1px;}
+.strength .bottom .circle ul li {margin-bottom: 50px; font-size: 1.7rem;}
+.strength .bottom .circle ul li:nth-child(3) {margin-bottom: 0;}
+.strength .bottom .circle ul li .tit {font-size: 2.5rem;font-weight: 600; line-height: 1;}
+.strength .bottom .circle ul li .tit span {color: var(--point); font-size: 5rem; letter-spacing: 1px; padding-bottom: 2rem; box-sizing: border-box; width: 55px; display: inline-block;}
+.strength .bottom p.circle_sub {width: 300px; position: relative; text-align: justify;}
+.strength .bottom p.circle_sub::after {content: ''; width: 50px; height: 50px; background: var(--point); position: absolute; left: 0; bottom: -80px; border-radius: 50%;}
+
+/* skill */
+section.skillIntro {text-align: center;}
+section.skillIntro .inner h2 {font-size: 10rem;}
+section.skillIntro .inner h2 span {font-size: 10.2rem; font-weight: normal;}
+section.skillIntro .inner .titSub {width: 60%; margin: 30px auto 0; color: var(--body-color);}
+
+
+section.skill {width: 100%; height: 100vh; position: relative; overflow: hidden; padding-top: 20vh;} 
+section.skill .inner ul {display: flex; flex-wrap: nowrap; position: relative;}
+section.skill .inner ul li {height: 540px; width: 380px; border: 1px solid #CECECE; box-sizing: border-box; padding: 80px 50px 20px; float: left; margin-left: 20px; flex-shrink: 0 !important; border-radius: 20px;}
+section.skill .inner ul li div.svgAni {width: 130px; height: 130px; margin: 10px auto 60px; transform: rotate(30deg); background: url(../about_img/skill_gray.png) no-repeat center/cover;}
+section.skill .inner ul li div.svgAni svg {width: 100%; height: 100%;}
+section.skill .inner ul li p.tit {font-size: 35px; margin-bottom: 20px; }
+section.skill .inner ul li p.txt {letter-spacing: -1px;}
+
+/* svg 선 */
+.st0{fill:none;stroke:#f2672e;stroke-width:11;stroke-linecap:round;stroke-miterlimit:11;}
+.st1{fill:none;stroke:#30aadd;stroke-width:11;stroke-linecap:round;stroke-miterlimit:11;}
+.st2{fill:none;stroke:#f2bf26;stroke-width:11;stroke-linecap:round;stroke-miterlimit:11;}
+.st3{fill:none;stroke:#0868ab;stroke-width:11;stroke-linecap:round;stroke-miterlimit:11;}
+.st5{fill:none;stroke:#53a4d8;stroke-width:11;stroke-linecap:round;stroke-miterlimit:11;}
+.st6{fill:none;stroke:#ff9e4d;stroke-width:11;stroke-linecap:round;stroke-miterlimit:11;}
+.st7{fill:none;stroke:#ff40fb;stroke-width:11;stroke-linecap:round;stroke-miterlimit:11;}
+.st8{fill:none;stroke:#FF3366;stroke-width:11;stroke-linecap:round;stroke-miterlimit:11;}
+
+
+/* svg 그래프 */
+.svgAni.motion .st0 {stroke-dasharray: 620.7; stroke-dashoffset: -620.7; animation: ani1 1s linear 0s forwards;}
+.svgAni.motion .st1 {stroke-dasharray: 620.7; stroke-dashoffset: -620.7; animation: ani1 1s linear 0s forwards;}
+@keyframes ani1 {
+  0% {stroke-dashoffset: 620.7;}
+  100% {stroke-dashoffset: 0;}
+}
+.svgAni.motion .st2 {stroke-dasharray: 253.4; stroke-dashoffset: -253.4; animation: ani2 1s linear 0s forwards;}
+@keyframes ani2 {
+  0% {stroke-dashoffset: 253.4;}
+  100% {stroke-dashoffset: 0;}
+}
+.svgAni.motion .st3 {stroke-dasharray: 391.2; stroke-dashoffset: -391.2; animation: ani3 1s linear 0s forwards;}
+@keyframes ani3 {
+  0% {stroke-dashoffset: 391.2;}
+  100% {stroke-dashoffset: 0;}
+}
+
+
+/* ncs */
+section.ncs .top {text-align: center;}
+section.ncs .top h2 {font-size: 10rem; line-height: 1;}
+section.ncs .top h2 span {font-size: 10.2rem}
+section.ncs .top .titDate {font-size: 4rem; margin: 30px 0 70px;}
+section.ncs .top .titSub {width: 60%; color: var(--body-color); margin: 0 auto 25vh;}
+
+/* 표 */
+section.ncs table {border-collapse: collapse; }
+section.ncs table th {text-align: left;}
+section.ncs table tr {border-bottom: 1px solid rgba(255, 255, 255, 0.3); height: 90px; box-sizing: border-box; position: relative; transition: all 0.3s;}
+section.ncs table tr::after {content: ''; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); background: url(../about_img/ncsArrow.png) no-repeat center/14px; width: 50px; height: 50px; border: 1px solid rgba(255, 255, 255, 0.3);border-radius: 50%; transition: all 0.3s;}
+section.ncs table tr:first-child:after {display: none;} 
+section.ncs table td {font-size: 16px;}
+section.ncs table th:first-child {box-sizing: border-box;}
+section.ncs table td:first-child {width: 15%;}
+section.ncs table td:nth-child(2) {width: 18%;}
+section.ncs table td:nth-child(3) {width: 10%; font-size: 15px; color: #a1a1a1;}
+section.ncs table td:nth-child(4) {font-size: 15px; letter-spacing: -1px; color: #a1a1a1; padding-right: 150px; box-sizing: border-box;}
+
+/* 표 hover */
+section.ncs table tr:hover {background: #fff; color: #000;}
+section.ncs table tr:first-child:hover {background: #000; color: #fff;}
+section.ncs table tr:hover:after {background: url(../about_img/ncsArrow.png) no-repeat center/14px; border: 1px solid rgba(0,0,0,0.4);border-radius: 50%;}
+section.ncs table tr:hover td:nth-child(3), section.ncs table tr:hover td:nth-child(4) {color: #343434;}
+
+
+
+/*반응형웹------------------------------*/
+
+/*1890px*/
+@media screen and (max-width:1890px){
+  .greeting .greet_txt p {font-size: 10.5rem;}
+  .greeting .greet_txt p span.en2 {font-size: 10.7rem;}
+}
+/*1600px*/
+@media screen and (max-width:1600px){
+  .visual .inner .tit p {font-size: 17rem;}
+  .visual .inner .tit p span {font-size: 17.2rem;}
+  .greeting .greet_txt p {font-size: 9.5rem;}
+  .greeting .greet_txt p span.en2 {font-size: 9.7rem;}
+  .about .inner {width: 70%;}
+  .swiper {width: 320px;height: 440px; }
+}
+
+/*1450px*/
+@media screen and (max-width:1450px){
+  .visual .inner .tit p {font-size: 15.5rem;}
+  .visual .inner .tit p span {font-size: 15.7rem;}
+  .visual .inner ul {width: 1750px;}
+  .visual .inner ul li {font-size: 3rem;}
+  .greeting .greet_txt p {font-size: 8rem;}
+  .greeting .greet_txt p span.en2 {font-size: 8.2rem;}
+  .strength .inner {width: 1000px;}
+  .strength .bottom .circle {width: 800px;}
+}
+
+/*1250px*/
+@media screen and (max-width:1250px){
+  .visual .inner .tit p {font-size: 12rem;}
+  .visual .inner .tit p span {font-size: 12.2rem;}
+  .greeting .greet_txt p {font-size: 6.8rem;}
+  .greeting .greet_txt p span.en2 {font-size: 7rem;}
+  .about .inner {width: 50%;}
+  .about .inner .about_txt {width: 100%;}
+  .about .cards {position: static; height: 100px; margin: 15vh 0 30vh;}
+  .strength .top h2 {font-size: 8rem;} 
+  .strength .top h2 span {font-size: 8.2rem;}
+  .strength .inner {width: 750px;}
+  .strength .bottom {flex-wrap: wrap;}
+  .strength .bottom .circle {width: 100%;}
+  section.skillIntro .inner h2 {font-size: 8rem;}
+  section.skillIntro .inner h2 span {font-size: 8.2rem;}
+  section.ncs .top h2 {font-size: 8rem;}
+  section.ncs .top h2 span {font-size: 8.2rem}
+  section.ncs .top .titDate {font-size: 4rem; margin: 20px 0 50px;}
+  section.ncs .top .titSub {margin: 0 auto 15vh;}
+  section.ncs table td {box-sizing: border-box;}
+  section.ncs table td:first-child {width: 15%; padding-right: 2%;}
+  section.ncs table td:nth-child(2) {width: 18%; padding-right: 2%;}
+  section.ncs table td:nth-child(3) {width: 12%; padding-right: 2%;}
+  section.ncs table td:nth-child(4) {padding-right: 100px;}
+}
+
+/*1024px*/
+@media screen and (max-width:1024px){
+  .visual .inner .tit p {font-size: 10rem;}
+  .visual .inner .tit p span {font-size: 10.2rem;}
+  .visual .inner ul {width: 1470px;}
+  .visual .inner ul li {font-size: 2.5rem;}
+  .greeting .greet_txt p {font-size: 5.8rem;}
+  .greeting .greet_txt p span.en2 {font-size: 6rem;}
+  .strength .inner {width: 650px;}
+  .strength .bottom .circle ul li {font-size: 1.6rem; margin-bottom: 25px;}
+  .strength .bottom .circle ul li .tit {font-size: 2rem;} 
+  .strength .bottom .circle ul li .tit span {font-size: 4rem; width: 40px;}
+}
+
+/*860px*/
+@media screen and (max-width:860px){
+  .visual .inner .tit p {font-size: 8rem;}
+  .visual .inner .tit p span {font-size: 8.2rem;}
+  .greeting .greet_txt p {font-size: 5rem;}
+  .greeting .greet_txt p span.en2 {font-size: 5.2rem;}
+  .about .inner {width: 70%;}
+  section.skill .inner ul li {height: 480px; width: 350px;}
+  section.skill .inner ul li div.svgAni {margin: 0 auto 30px; 
+}
+
+/*768px*/
+@media screen and (max-width:768px){
+
+}

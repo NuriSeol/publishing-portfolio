@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/* visual */
+.visual {padding-top: 160px; box-sizing: border-box; width: 100%; height: 100vh; position: relative; }
+.visual .inner {z-index: 2;}
+.visual .inner p {font-size: 20rem; line-height: 1; display: flex; justify-content: space-between; align-items: center;}
+.visual .inner p span.en2 {font-size: 20.2rem; color: var(--point); line-height: 0.9;}
+.visual p.img {width: 35%; height: 85vh; position: absolute; top: 50%; left: 50%; transform: translate(-55%, -50%); overflow: hidden; filter: grayscale(1);}
+.visual p.img img {width: 100%;}
+.visual ul {position: absolute; width: 90%; left: 5%; bottom: 7.5%; display: flex; color: #888; line-height: 1.5; border-top: 1px solid var(--line); padding-top: 2vh;}
+.visual ul li {margin-right: 50px;}
+.visual .inner p .scrollDown {display: block; width: 60px; height: 60px; position: relative; border: 1px solid #fff; border-radius: 50%;}
+.visual .inner p .scrollDown img {width: 20px; height: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+/* Scroll down 모션 */
+.visual.motion span.scrollDown {animation-name: opacity; animation-duration: 2.2s;}
+@keyframes opacity {
+  0% {opacity: 0;}
+  30% {opacity: 0;}
+}
+
+
+/* greeting */
+.greeting {width: 100%; padding: 380px 5vw; box-sizing: border-box;}
+.greeting .greet_txt p {font-size: 12.5rem; line-height: 1.1; letter-spacing: -2px;} 
+.greeting .greet_txt p.b a {color: var(--point);}
+.greeting p.d {text-align: center; font-size: 2rem; margin-top: 60px; letter-spacing: -1px;}
+.greeting .greet_txt p span.en2 {font-size: 12.7rem;}
+
+
+/* about */
+.about {width: 100%;}
+.about .inner {position: relative;}
+.about .inner .top {position: relative; display: flex; justify-content: center;align-items: center; margin-bottom: 50px;}
+.swiper {width: 255px;height: 390px;}
+.swiper-slide {display: flex; align-items: center; justify-content: center;border-radius: 18px;font-size: 14px;font-weight: bold;color: #fff; }
+.swiper-slide:nth-child(1) {background: url(../img/profile.png) no-repeat center/cover;}
+.swiper-slide:nth-child(2) {background: url(../img/motto1.jpg) no-repeat center/cover;}
+.swiper-slide:nth-child(3) {background: url(../img/about1.jpg) no-repeat center/cover;}
+.swiper-slide:nth-child(4) {background: url(../img/about2.jpg) no-repeat center/cover;}
+.swiper-slide:nth-child(5) {background: url(../img/about3.jpg) no-repeat center/cover;}
+
+/* .about ul.cards li 호버하면 컬러 */
+.about ul.cards li:hover {filter: grayscale(0);}
+
+.about .txt {margin: 0 auto; width: 100%; text-align: center;}
+.about .about_tit {font-size: 4.5rem; line-height: 1.3; margin-bottom: 50px;}
+.about .about_tit p:last-child {font-size: 1.6rem; margin-top: 10px;}
+.about .about_sub {letter-spacing: -1px; font-size: 1.6rem; letter-spacing: -1px;}
+.about .about_sub a.readMore {display: inline-block; margin-top: 40px; letter-spacing: 0; border: 1px solid #000; border-radius: 40px; box-sizing: border-box; padding: 3px 30px; transition: all 0.3s; z-index: 100; font-size: 2rem;}
+
+/* about hover */
+a.readMore:hover, a.readMore:focus {background: #000; color: #fff;}
+
+/* about설명 애니 */
+.about.motion .about_tit {animation-name: opacity; animation-duration: 2s;}
+.about.motion .about_sub p {animation-name: opacity; animation-duration: 2.5s;}
+.about.motion .about_sub a {animation-name: opacity; animation-duration: 2.8s;} 
+
+
+/* work */
+.work {margin-top: 100px;}
+.work .inner {width: 70%;}
+.work .title {width: 100%; height: 100vh; font-size: 17rem; line-height: 1; text-align: center; padding-top: 30vh; box-sizing: border-box;}
+.work .title .en2 {font-size: 17.2rem;}
+.work .workList {display: flex; justify-content: space-between; flex-wrap: wrap; width: 100%; margin: 0 auto;} 
+.work .workList li {margin-top: 200px;}
+.work .workList li:nth-child(1) {width: 56%;}
+.work .workList li:nth-child(2) {width: 36%;}
+.work .workList li:nth-child(3) {width: 62%;}
+.work .workList li:nth-child(4) {width: 32%;}
+.work .workList li:nth-child(5) {width: 46%;}
+.work .workList li:nth-child(6) {width: 46%;}
+.work .workList li:nth-child(2n) {margin-top: 100px;}
+.work .workList li a {display: block; position: relative; width: 100%; height: 100%; } 
+.work .workList li a .imgBox {position: relative; overflow: hidden;}
+.work .workList li a .imgBox img {width: 100%; transition: all 0.9s;}
+.work .workList li a .textBox h3 {font-weight: normal; font-size: 35px; margin: 20px 0 10px; text-align: left;}
+.work .workList li a .textBox .info {display: flex; justify-content: space-between; color: #888;}
+.work .workList li a .textBox .info p {font-size: 16px;}
+
+/* .workList 애니메이션 */
+.work .workList li a .imgBox::before {content: '';  width: 100%; height: 100%; background: #000; position: absolute; top: 0; left: 0; opacity: 0;}  
+.work .workList li a .imgBox .svgAni {width: 180px; height: 180px; position: absolute;top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.work .workList li a .imgBox .svgAni svg {width: 100%; height: 100%;}
+.work .workList li a .imgBox .svgAni::after {content: 'MORE VIEW'; position: absolute; top: 50%; width: 180px; top: 50%; left: 50%; text-align: center; font-size: 18px; font-family: 'mabry-regular'; font-weight: normal; opacity: 0; transform: translate(-50%,-50%);}
+
+.work .workList li:hover a .imgBox::before {opacity: 1;}
+.work .workList li:hover a .imgBox img {transform: scale(1.05); opacity: 0.4;}
+.work .workList li:hover a .imgBox .svgAni::after {animation-name: spinTxt; animation-duration: 0.5s; opacity: 1;}
+@keyframes spinTxt {
+  0% {transform: translate(-50%,-50%) rotate(-180deg); opacity: 0;}
+}
+
+.work .workList li .svgAni .st0 {opacity: 0;}
+.work .workList li:hover .svgAni .st0 {stroke-dasharray: 494.9; stroke-dashoffset: -620.7; animation: spin 0.5s linear 0s forwards;}
+@keyframes spin {
+  0% {stroke-dashoffset: 494.9; opacity: 0;}
+  100% {stroke-dashoffset: 0; opacity: 1;}
+}
+
+
+/* skill */
+.skill {width: 100%; height: 100vh; position: relative; margin-top: 200px; }
+.skill .textWrap{width: 70%; position: absolute;left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 2;}
+.skill .textWrap .title{font-size: 18px; overflow: hidden; margin-bottom: 20px;}
+.skill .textWrap ul li{font-size: 85px; line-height: 1.3; overflow: hidden;}
+
+.skill .textWrap .moreView {position: absolute; right: 10%; top: 30%; width: 180px; height: 180px; border: 1px solid #fff; border-radius: 50%; box-sizing: border-box;}
+.skill .textWrap .moreView a {display: inline-block; position: relative; overflow: hidden; font-size: 18px; font-family: 'mabry-regular'; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 107px;} 
+.skill .textWrap .moreView a .origin {opacity: 0;}
+.skill .textWrap .moreView a .top, .skill .textWrap .moreView a .bottom {display: block; position: absolute; top: 0; left: 0;}
+.skill .textWrap .moreView a .top {transform: translateY(100%); animation: infi2 1s infinite 2s;}
+.skill .textWrap .moreView a .bottom {animation: infi1 1s infinite 2s;}
+@keyframes infi1 {
+  0% {transform: translateY(-100%);}
+}
+@keyframes infi2 {
+  0% {transform: translateY(0%);}
+}
+
+.skill ul.list li {float: left; width: 400px;}
+.skill ul.list li img {width: 100%;}
+
+.simply-scroll-clip {transform: translate(-150%,400px) rotate(5deg) scale(1.1); opacity: 0; filter: brightness(50%);overflow: hidden;}
+.simply-scroll .simply-scroll-list li{float: left; width: 400px;}
+.simply-scroll .simply-scroll-list li img{width: 100%;}
+
+/* skill스킬모션 */
+.skill.motion .simply-scroll-clip {transition: 1.2s;transform: translate(0,400px) rotate(5deg) scale(1.1); transition-delay: 0.3s; opacity: 1;}
+.skill.motion .textWrap ul.en li  {animation: textAni 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
+
+
+
+/*반응형웹------------------------------*/
+
+/*1890px*/
+@media screen and (max-width:1890px){
+  .greeting .greet_txt p {font-size: 10.5rem;}
+  .greeting .greet_txt p span.en2 {font-size: 10.7rem;}
+}
+/*1600px*/
+@media screen and (max-width:1600px){
+  .greeting .greet_txt p {font-size: 9.5rem;}
+  .greeting .greet_txt p span.en2 {font-size: 9.7rem;}
+}
+
+/*1450px*/
+@media screen and (max-width:1450px){
+  .visual .inner p {font-size: 18rem;}
+  .visual .inner p span.en2 {font-size: 18.2rem;}
+  .visual p.img {width: 40%; height: 80vh;}
+  .greeting .greet_txt p {font-size: 8rem;}
+  .greeting .greet_txt p span.en2 {font-size: 8.2rem;}
+  .about .about_tit {font-size: 3.5rem;}
+  .about .about_tit p:last-child {margin-top: 20px;  font-size: 1.8rem;}
+  .about .about_sub {font-size: 1.8rem;}
+  .about .about_sub a.readMore {margin-top: 60px;}
+}
+
+/*1250px*/
+@media screen and (max-width:1250px){
+  .visual .inner p {font-size: 15.5rem;}
+  .visual .inner p span.en2 {font-size: 15.7rem;}
+  .greeting .greet_txt p {font-size: 6.8rem;}
+  .greeting .greet_txt p span.en2 {font-size: 7rem;}
+  .work .title {font-size: 12rem;}
+  .work .title .en2 {font-size: 12.2rem;}
+  .skill .textWrap .moreView {width: 130px; height: 130px; right: 0%; top: 35%;}
+  .skill .textWrap .moreView a {font-size: 1.5rem; width:90px;}
+}
+
+/*1024px*/
+@media screen and (max-width:1024px){
+  .visual .inner p {font-size: 13rem;}
+  .visual .inner p span.en2 {font-size: 13.2rem;}
+  .visual p.img {width: 45%; height: 80vh;}
+  .greeting .greet_txt p {font-size: 5.8rem;}
+  .greeting .greet_txt p span.en2 {font-size: 6rem;}
+  .about .about_sub .mo {display: none;}
+  .swiper {width: 200px;height: 320px;}
+}
+
+/*860px*/
+@media screen and (max-width:860px){
+  .greeting .greet_txt p {font-size: 5rem;}
+  .greeting .greet_txt p span.en2 {font-size: 5.2rem;}
+}
+
+/*768px*/
+@media screen and (max-width:768px){
+  .visual {padding-top: 0; position: relative;}
+  .visual .inner {font-size: 10rem; position: absolute; top: 25%; left: 50%; transform: translateX(-50%);}
+  .visual .inner p {flex-wrap: wrap;}
+  .visual .inner p span {display: block; width: 100%; text-align: center; font-size: 9.7rem;}
+  .visual .inner p span.en2 {font-size: 10.2rem; line-height: 1;}
+  .visual .inner p .scrollDown {display: none;}
+  .visual p.img {width: 80%; height: 80vh; transform: translate(-50%, -50%);}
+  .visual ul {width: 100%; flex-wrap: wrap;}
+  .visual ul li {width: 100%;}
+  .visual ul li:first-child {margin-bottom: 15px;}
+  .greeting .greet_txt p {font-size: 4rem;}
+  .greeting .greet_txt p span.en2 {font-size: 4.2rem;}
+  .greeting p.d {margin-top: 40px; font-size: 1.6rem;}
+  .work .title {font-size: 10rem;}
+  .work .title .en2 {font-size: 10.2rem;}
+  .work .workList li {margin-top: 100px;}
+  .work .workList li:nth-child(1) {width: 48%;}
+  .work .workList li:nth-child(2) {width: 48%;}
+  .work .workList li:nth-child(3) {width: 48%;}
+  .work .workList li:nth-child(4) {width: 48%;}
+  .work .workList li:nth-child(5) {width: 48%;}
+  .work .workList li:nth-child(6) {width: 48%;}
+  .work .workList li:nth-child(2n) {margin-top: 20px;}
+  .work .workList li a .textBox h3 {font-size: 2rem; line-height:  1.2;}
+  .skill .textWrap ul li {font-size: 5.5rem;}
+  .work .workList li a .textBox .info {flex-wrap: wrap; line-height: 1.2;}
+  .work .workList li a .textBox .info p:first-child {margin-bottom: 5px;}
+  .work .workList li a .imgBox .svgAni {width: 110px; height: 110px;}
+  .work .workList li a .imgBox .svgAni::after {font-size: 1.5rem;}
+}
+
+/*560px*/
+@media screen and (max-width:560px){
+  .visual .inner p {font-size: 9rem;}
+  .visual .inner p span.en2 {font-size: 9.2rem;}
+  .greeting {padding: 150px 5vh;}
+  .greeting .greet_txt p {font-size: 2.5rem; text-align: center;}
+  .greeting .greet_txt p span.en2 {font-size: 2.7rem;}
+  .greeting p.d {margin-top: 20px;}
+  .about .about_tit {font-size:3rem; margin-bottom: 20px;}
+  .about .about_tit p:last-child {margin-top: 10px; font-size: 1.4rem;}
+  .swiper {width: 150px;height: 220px;}
+  .about .about_sub {font-size: 1.6rem;}
+  .work .title {font-size: 8rem;}
+  .work .title .en2 {font-size: 8.2rem;}
+  .work .workList {flex-wrap: wrap;}
+  .work .workList li {width: 100%;}
+  .work .workList li {margin-top: 100px;}
+  .work .workList li:nth-child(1) {width: 100%;}
+  .work .workList li:nth-child(2) {width: 100%;}
+  .work .workList li:nth-child(3) {width: 100%;}
+  .work .workList li:nth-child(4) {width: 100%;}
+  .work .workList li:nth-child(5) {width: 100%;}
+  .work .workList li:nth-child(6) {width: 100%;}
+  .work .workList li:nth-child(2n) {margin-top: 100px;}
+  .skill .textWrap ul li {font-size: 5rem;}
+  .skill .textWrap .moreView {width: 100px; height: 100px; right: 0; top: 100%;}
+  .skill .textWrap .moreView a {font-size: 1.4rem; width:85px;}
+}

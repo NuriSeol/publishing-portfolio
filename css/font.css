@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "mabry-regular";
+  src:  url("../fonts/mabry-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src:  url("../fonts/Gilroy-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy-semibold";
+  src:  url("../fonts/Gilroy-semibold.woff") format("woff");
+}
+@font-face {
+  font-family: "Mazius";
+  src:  url("../fonts/Mazius.woff") format("woff");
+}
+
+/* 영어 폰트 */
+.en {font-family: 'Gilroy-semibold';}
+.en2 {font-family: 'MAZIUS';}
+.en4 {font-family: 'Gilroy-Medium';}
