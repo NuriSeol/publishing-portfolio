@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanwha - seol noori's portfolio</title>
+  <!-- js -->
+  <script defer src="js/jquery-3.3.1.min.js"></script>
+  <script defer src="js/plugin/scrolla.jquery.min.js"></script>
+  <script defer src="js/plugin/splitting.min.js"></script>
+  <script defer src="js/common.js"></script>
+  <script defer src="subJs/subCommon.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="subCss/response.css">
+  <link rel="stylesheet" href="css/font.css">
+  <!--font arapey, notosans-->
+  <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="index.html" class="logo en"><span>NUINUR</span></a>
+      <nav class="gnb en">
+        <ul>
+          <li><a href="about.html">
+            <span class="origin">about</span>
+            <span class="top">about</span>
+            <span class="bottom">about</span>
+          </a></li>
+          <li><a href="work.html">
+            <span class="origin">work</span>
+            <span class="top">work</span>
+            <span class="bottom">work</span>
+          </a></li>
+          <li><a href="process.html">
+            <span class="origin">portfolio</span>
+            <span class="top">portfolio</span>
+            <span class="bottom">portfolio</span>
+          </a></li>
+        </ul>
+      <a href="#" class="menuOpen"></a>
+      </nav>
+    </header>
+
+    <section class="visual animate" data-animate="motion">
+      <div class="visual_in" style="background: url(work_img/hanhwa.jpg) no-repeat center/cover;">
+        <h1 class="en">Hanwha</h1>
+        <div class="right">
+          <p class="date en2">2023.02.06</p>
+          <p>대한민국 대표 석유화학 기업, 한화캐미칼의 홈페이지입니다.
+            국내에서 처음으로 자체 기술로 CPVC를 생산하는데 성공하고 <br>
+            2017년 울산 2공장에서 연간 3만톤 규모의 공장을 건설해 생산중인 한화캐미칼,
+            끊임없는 기술 혁신으로 미래 성장 동력을 지속 발굴합니다.</p>
+          <span class="en">CLONE CODING</span>
+        </div>
+      </div><!--visual_in-->
+    </section>
+    
+    <section class="info animate" data-animate="motion">
+      <div class="inner_sub">
+        <ul class="list a">
+          <li>
+            <p class="tit en">PURPOSE</p>
+            <p>대한민국 대표 석유화학 기업 홈페이지로
+              회사의 사업소개와 연혁 등을 보여주는 사이트입니다.</p>
+          </li>
+          <li>
+            <p class="tit en">CONCEPT</p>
+            <p>visual 영역 fix img와 박스 구조의 깔끔한 레이아웃</p>
+          </li>
+          <li>
+            <p class="tit en">POINT</p>
+            <p>맨 아래 영역 img를 hover하면
+              background color가 0%에서 100%로 서서히 채워지는 효과</p>
+          </li>
+        </ul>
+        <ul class="list b">
+          <li>
+            <p class="tit en">OVERVIEW</p>
+            <p>고객의 비즈니스를 위해 수준 높은 결과물을 제작하는 웹에이전시 사이트입니다 <br>
+              UI/UX 기획과 디자인 그리고 구축에서 운영까지 경험이 풍부한 웹 에이전시로,
+              다양한 온라인 서비스들을 구축하고 운영해온 풍부한 경험을 가지고 있습니다. <br>
+              모바일 앱 / 웹 디자인 및 웹 표준화 작업과
+              UI/UX 설계 및 제안서 작성, 워드프레스기반 웹사이트 구축 등을 제공합니다.
+              </p>
+          </li>
+          <li>
+            <p class="tit">사용 프로그램</p>
+            <p>Visual Studio Code</p>
+          </li>
+        </ul>
+        <ul class="list c">
+          <li>
+            <p class="tit en">CONTENT</p>
+            <ul>
+              <li>- ABOUT Hanwha Chemical.</li>
+              <li>- OUR ORIDUCT innovations.</li>
+              <li>- CHALLENGE me.</li>
+              <li>- SNS channel.</li>
+            </ul>
+          </li>
+          <li>
+            <p class="tit">주요 학습 내용</p>
+            <ul>
+              <li>- fixed header 적용</li>
+              <li>- img hover 할때 이미지 크기 변경</li>
+              <li>- 박스 구조의 html 마크업</li>
+              <li>- before,after 활용하여 요소 적용</li>
+              <li>- img hover 효과 적용</li>
+              <li>- scrolla로 이미지와 폰트의 animation 적용</li>
+              <li>- 반응형 페이지 적용</li>
+            </ul>
+          </li>
+        </ul>
+      </div><!--inner_sub-->
+    </section>
+
+    <div class="mode">
+      <div class="inner_sub">
+
+        <!-- pc -->
+        <section class="pc animate" data-animate="motion">
+          <div class="top">
+            <p class="img">
+              <img src="hanwha/hanhwa_pc.gif" alt="">
+            </p>
+            <h2 class="en" data-splitting>PC MODE</h2>
+          </div>
+          <p class="txt">
+            스크롤 애니메이션과 호버효과를 통해
+            역동적인 느낌을 구현하였습니다.</p>
+        </section>
+
+        <section class="mobTab animate" data-animate="motion">
+          <div class="mob">
+            <p class="img">
+              <img src="hanwha/hanhwa_mobile.gif" alt="">
+            </p>
+            <h2 class="en" data-splitting>MOBIL MODE</h2>
+            <p class="txt">Tablet Mode는
+              PC Mode의 전체적인 틀을 유지하되
+              Header와 Footer를 단순화하였습니다.</p>
+          </div><!--mob-->
+
+          <div class="tab animate" data-animate="motion">
+            <h2 class="en" data-splitting>TABLET MODE</h2>
+            <div class="right">
+              <p class="img">
+                <img src="hanwha/hanhwa_tablet.gif" alt="">
+              </p>
+              <p class="txt">Mobile Mode는 가로로 늘어져 있던
+                요소를 한 줄씩 배치하였습니다.</p>
+            </div>  
+          </div><!--tab-->
+        </section>
+        </div><!--inner_sub-->
+    </div><!--mode-->
+
+    <section class="full animate" data-animate="motion">
+      <h2 class="en" data-splitting>FULL PAGE</h2>
+      <img src="hanwha/full_hanhwa.jpg" alt="">
+    </section>
+
+    <footer class="animate" data-animate="motion">
+      <div class="inner">
+        <p>THANK YOU FOR REVEIWING MY PORFOLIO. <br>
+          IF YOU ARE INTERESTED IN ME, CONTACT ME.</p>
+        <div class="mainText en">
+          <p>Togethe<span class="en2">r</span></p>
+          <p><span>we create projects</span></p>
+        </div>
+        <div class="footer_bottom">
+          <ul class="info1">
+            <li>설누리 SEOL NURI</li>
+            <li>Web Publisher</li>
+            <li>Seoul, Republic of Korea</li>
+          </ul>
+          <ul class="info2">
+            <li><span>PHONE</span>+82 010-4584-8370</li>
+            <li><a href="#"><span>E-MAIL</span>qqq4020@naver.com</a></li>
+            <li><a href="https://nuinur.tistory.com/"><span>TISTORY</span></a>https://nuinur.tistory.com/</li>
+          </ul>
+          <p>2023 SEOL NURI'S PUBLISHING PORTFOLIO</p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="hanwha.html" class="goTop"><img src="img/readMore3.png" alt=""></a>
+  </div><!--wrap-->
+</body>
+</html>
