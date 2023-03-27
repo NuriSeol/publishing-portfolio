@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>seol nuri's portfolio</title>
+  <!-- js -->
+  <script defer src="js/jquery-3.3.1.min.js"></script>
+  <script defer src="js/plugin/jquery.simplyscroll.min.js"></script>
+  <script defer src="js/plugin/scrolla.jquery.min.js"></script>
+  <script defer src="js/common.js"></script>
+  <script defer src="js/main.js"></script>
+  <!-- js gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/font.css">
+  <!-- 카드 css  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <!--font arapey, notosans-->
+  <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="loader aa"></div>
+  <div class="loader bb"></div>
+
+  <!-- menuOpen -->
+  <div class="menuOpen">
+    <button class="open">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="menuWrap">
+      <a href="#" class="close"><img src="img/close.png" alt=""></a>
+      <ul class="tit en animate" data-animate="motion">
+        <li><a href="index.html"><span><b>MAIN</b></span></a></li>
+        <li><a href="about.html"><span><b>ABOUT</b></span></a></li>
+        <li><a href="work.html"><span><b>WORK</b></span></a></li>
+        <li><a href="process.html"><span><b>PORTFOLIO</b></span></a></li>
+      </ul>
+    </div>
+  </div><!--menuopen-->
+
+  <div class="wrap">
+    <header>
+      <a href="index.html" class="logo en"><span>NUINUR</span></a>
+      <nav class="gnb en">
+        <ul>
+          <li><a href="about.html">
+            <span class="origin">about</span>
+            <span class="top">about</span>
+            <span class="bottom">about</span>
+          </a></li>
+          <li><a href="work.html">
+            <span class="origin">work</span>
+            <span class="top">work</span>
+            <span class="bottom">work</span>
+          </a></li>
+          <li><a href="process.html">
+            <span class="origin">portfolio</span>
+            <span class="top">portfolio</span>
+            <span class="bottom">portfolio</span>
+          </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- visual -->
+    <section class="visual animate" data-animate="motion">
+      <div class="inner en">
+        <p><span>creative</span><span class="en2">nuri's</span></p>
+        <p><span class="scrollDown"><img src="img/scrolldown.png" alt=""></span><span>portfolio</span> </p>
+      </div>
+      <p class="img"><img src="img/visual.jpg" alt=""></p>
+      <ul>
+        <li>
+          설누리 SEOL NURI <br>
+          Web Publisher
+        </li>
+        <li>
+          +82 010-4584-8370<br>
+          qqq4020@naver.com
+        </li>
+      </ul>
+    </section>
+
+
+    <!--greeting-->
+    <section class="greeting en">
+        <div class="greet_txt">
+          <p class="a">Hello! My Name is seol nuri.</p>
+          <p class="b">I am a <a href="#">C<span class="en2">r</span>eative</a> Web Publisher</p>
+          <p class="c">with Great Potential.</p>
+        </div>
+        <p class="d">신입 웹퍼블리셔, 설누리입니다.</p>
+    </section>
+
+
+    <!-- about -->
+    <section class="about animate" data-animate="motion">
+      <div class="inner">
+        <div class="top">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+        </div>
+     </div>
+        </div>
+        <div class="txt">
+          <div class="about_tit">
+            <p class="en">"I'll become web publisher who grows with greed as the driving force."</p>
+            <p>욕심을 원동력으로 성장하는 퍼블리셔가 되겠습니다.</p>
+          </div>
+          <div class="about_sub">
+            <p>
+              저는 웹퍼블리싱을 하면 즐겁고 더 잘하고 싶다는 욕심이 생깁니다. 이렇게 직업으로 한 일에서 즐거움을 느낀다는 것은 큰 장점이라고 생각합니다. <br class="mo"> 앞으로도 꾸준한 공부를 통해 사이트 기획부터 디자인, 퍼블리싱, 프론트엔드 개발까지 제 능력으로 작업하여 멋진 작품을 만드는 것이 목표입니다. 
+            </p>
+            <a href="about.html" class="readMore en">ABOUT ME</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- work -->
+    <section class="work">
+      <div class="inner">
+        <div class="title en">
+          <p class="a">My</p>         
+          <p class="b">Wo<span class="en2">r</span>k</p>
+        </div>
+          <ul class="workList">
+            <li>
+                <a href="ystudio.html">
+                    <div class="imgBox">
+                      <img src="img/response.jpg" alt="">
+                      <div class="svgAni">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 160 160" style="enable-background:new 0 0 180 180;" xml:space="preserve">
+                          <style type="text/css">
+                            .st0{fill:none;stroke:#ffffff;stroke-width:1.5px;stroke-miterlimit:10;}
+                          </style>
+                          <circle class="st0" cx="80" cy="80" r="78.9"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="textBox">
+                        <h3>YSTUDIO</h3>
+                        <div class="info">
+                            <p>UI/UX Design, Web publishing</p>
+                            <p>2023</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="phomain.html">
+                    <div class="imgBox">
+                      <img src="img/phomain.jpg" alt="">
+                      <div class="svgAni">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 160 160" style="enable-background:new 0 0 180 180;" xml:space="preserve">
+                          <style type="text/css">
+                            .st0{fill:none;stroke:#ffffff;stroke-width:1.5px;stroke-miterlimit:10;}
+                          </style>
+                          <circle class="st0" cx="80" cy="80" r="78.9"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="textBox">
+                        <h3>PHOMAIN</h3>
+                        <div class="info">
+                            <p>UI/UX Design, Web publishing</p>
+                            <p>2023</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+              <a href="daebang.html">
+                  <div class="imgBox">
+                    <img src="img/daebang.jpg" alt="">
+                    <div class="svgAni">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 160 160" style="enable-background:new 0 0 180 180;" xml:space="preserve">
+                        <style type="text/css">
+                          .st0{fill:none;stroke:#ffffff;stroke-width:1.5px;stroke-miterlimit:10;}
+                        </style>
+                        <circle class="st0" cx="80" cy="80" r="78.9"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="textBox">
+                      <h3>DAEBANG</h3>
+                      <div class="info">
+                          <p>UI/UX Design, Web publishing</p>
+                          <p>2023</p>
+                      </div>
+                  </div>
+              </a>
+            </li>
+            <li>
+                <a href="musign.html">
+                    <div class="imgBox">
+                      <img src="work_img/musign.jpg" alt="">
+                      <div class="svgAni">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 160 160" style="enable-background:new 0 0 180 180;" xml:space="preserve">
+                          <style type="text/css">
+                            .st0{fill:none;stroke:#ffffff;stroke-width:1.5px;stroke-miterlimit:10;}
+                          </style>
+                          <circle class="st0" cx="80" cy="80" r="78.9"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="textBox">
+                        <h3>Musign</h3>
+                        <div class="info">
+                            <p>UI/UX Design, Web publishing</p>
+                            <p>2023</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="hanwha.html">
+                    <div class="imgBox">
+                      <img src="img/hanhwa.jpg" alt="">
+                      <div class="svgAni">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 160 160" style="enable-background:new 0 0 180 180;" xml:space="preserve">
+                          <style type="text/css">
+                            .st0{fill:none;stroke:#ffffff;stroke-width:1.5px;stroke-miterlimit:10;}
+                          </style>
+                          <circle class="st0" cx="80" cy="80" r="78.9"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="textBox">
+                        <h3>HANHWA CHEMICAL</h3>
+                        <div class="info">
+                            <p>UI/UX Design, Web publishing</p>
+                            <p>2023</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="cru.html">
+                    <div class="imgBox">
+                      <img src="img/cru.jpg" alt="">
+                      <div class="svgAni">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 160 160" style="enable-background:new 0 0 180 180;" xml:space="preserve">
+                          <style type="text/css">
+                            .st0{fill:none;stroke:#ffffff;stroke-width:1.5px;stroke-miterlimit:10;}
+                          </style>
+                          <circle class="st0" cx="80" cy="80" r="78.9"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="textBox">
+                        <h3>Crew a la mode</h3>
+                        <div class="info">
+                            <p>UI/UX Design, Web publishing</p>
+                            <p>2023</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- skill -->
+    <section class="skill animate" data-animate="motion">
+      <div class="textWrap">
+        <div class="title en">
+            <p>My Skill</p>
+        </div>
+        <ul class="en">
+            <li><p>Photoshop</p></li>
+            <li><p>Figma</p></li>    
+            <li><p>Html / CSS</p></li>    
+            <li><p>JavaScript</p></li>    
+            <li><p>JQuery</p></li>    
+            <li><p>React</p></li>    
+        </ul>
+        <p class="moreView">
+          <a href="about.html">
+            <span class="origin">MORE VIEW</span>
+            <span class="top">MORE VIEW</span>
+            <span class="bottom">MORE VIEW</span>
+          </a>
+        </p>
+      </div>
+
+      <ul class="list">
+          <li><img src="img/skill1.jpg" alt=""></li>
+          <li><img src="img/skill2.jpg" alt=""></li>
+          <li><img src="img/skill3.jpg" alt=""></li>
+          <li><img src="img/skill4.jpg" alt=""></li>
+          <li><img src="img/skill5.jpg" alt=""></li>
+          <li><img src="img/skill6.jpg" alt=""></li>
+          <li><img src="img/skill7.jpg" alt=""></li>
+      </ul>
+    </section>
+
+
+      <footer class="animate" data-animate="motion">
+        <div class="inner">
+          <p>THANK YOU FOR REVEIWING MY PORFOLIO. <br>
+            IF YOU ARE INTERESTED IN ME, CONTACT ME.</p>
+          <div class="mainText en">
+            <p>Togethe<span class="en2">r</span></p>
+            <p><span>we create projects</span></p>
+          </div>
+          <div class="footer_bottom">
+            <ul class="info1">
+              <li>설누리 SEOL NURI</li>
+              <li>Web Publisher</li>
+              <li>Seoul, Republic of Korea</li>
+            </ul>
+            <ul class="info2">
+              <li><span>PHONE</span>+82 010-4584-8370</li>
+              <li><a href="#"><span>E-MAIL</span>qqq4020@naver.com</a></li>
+              <li><a href="https://nuinur.tistory.com/"><span>TISTORY</span></a>https://nuinur.tistory.com/</li>
+            </ul>
+            <p>2023 SEOL NURI'S PUBLISHING PORTFOLIO</p>
+          </div>
+        </div>
+      </footer>
+
+      <a href="index.html" class="goTop"><img src="img/readMore3.png" alt=""></a>
+  </div><!--wrap-->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
